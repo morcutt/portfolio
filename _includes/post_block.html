@@ -1,0 +1,9 @@
+<!-- Renders post date, title, and snippet of text. -->
+<div class="col-4 py-2 px-2 mb-2 prose left">
+  <a href="{{ post.url | prepend: site.baseurl }}" class="inline-block mb-1"><img src="https://www.fillmurray.com/700/700"></a>
+  <h2 class="h2 lh-condensed col-9 mt-0">
+    <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
+  <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+  <a class="no-underline h5 bold text-accent" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
+</div>
