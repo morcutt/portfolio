@@ -1,0 +1,61 @@
+<header class="header-background clearfix">
+  {% if page.landing == "about" %}
+  <div class="container mx-auto px-2 mb-2 clearfix header-text">
+    <br><br>
+    <h1 class="h0 inline-block col-9 sm-width-full mt-4 mb-4 header-title">I'm a research-driven full-stack designer.</h1>
+    <br><br>
+    <div class="clearfix mb-4 py-1">
+      <div class="col-4 sm-width-full left border-top-thin">
+        <div class="table">
+          <div class="inline-block mt-3 mr-1">
+            {% include dot-accent.html %}
+          </div>
+          <div class="inline-block mt-3 mr-1">
+            {% include {{ site.social_link | default: "twitter" }}.html %}
+          </div>
+          <div class="inline-block mt-3 mr-1">
+            {% include github.html %}
+          </div>
+          <div class="inline-block mt-3 mr-1">
+            {% include dribbble.html %}
+          </div>
+          <div class="inline-block mt-3 mr-1">
+            {% include instagram.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if page.landing == "home" %}
+  <div class="container mx-auto px-2 mb-2 clearfix header-text">
+    <br><br>
+    <h1 class="h0 inline-block col-9 sm-width-full mt-4 mb-0 header-title">{{ site.title }}</h1>
+    <br><br>
+    <p class="h4 font-smoothing col-9 sm-width-full mt-2">{{ site.description }}</p>
+    <p class="h4 font-smoothing col-9 sm-width-full py-2">{{ site.description-cont }}</p>
+    <p class="h4 font-smoothing col-9 sm-width-full mb-3">{{ site.description-cont-too }}</p>
+    <div class="clearfix mb-4 py-1">
+      <div class="col-4 sm-width-full left border-top-thin">
+        <div class="table">
+          <div class="inline-block mt-3 mr-1">
+            {% include dot-accent.html %}
+          </div>
+          <div class="inline-block mt-3 mr-1">
+            {% include {{ site.social_link | default: "twitter" }}.html %}
+          </div>
+          <div class="inline-block mt-3 mr-1">
+            {% include github.html %}
+          </div>
+          <div class="inline-block mt-3 mr-1">
+            {% include dribbble.html %}
+          </div>
+          <div class="inline-block mt-3 mr-1">
+            {% include instagram.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</header>
