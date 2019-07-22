@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% if page.landing == "home" %}
+    {% include header.html content="landing"  %}
+    {% else %}
+    {% include header.html %}
+    {% endif %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

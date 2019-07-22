@@ -5,5 +5,4 @@
     <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </h2>
   <p>{{ post.content | strip_html | truncatewords:30 }}</p>
-  <a class="no-underline h5 bold text-accent" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
 </div>
